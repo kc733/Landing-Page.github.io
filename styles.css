@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: black;
+	color: white;
+}
+
+body {
+	background-color: blue;
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	position: sticky;
+	background-color: black;
+}
+
+main {
+	width: 70%;
+	background-color: black;
+	margin: 0 auto;
+}
+
+section {
+	background-color: black;
+	padding: 1.5rem;
+}
+
+h1 {
+	font-size: 3rem;
+	font-family: "New Rocker", sans-serif;
+}
+
+h2 {
+	font-family: "New Rocker", sans-serif;
+	font-size: 2.5rem;
+	padding-bottom: 1.2rem;
+	-webkit-text-stroke-width: 0.5px;
+  	-webkit-text-stroke-color: blue;
+}
+
+h3 {
+	font-family: "New Rocker", sans-serif;
+	font-size: 1.5rem;
+}
+
+p {
+	font-family: "Press Start 2P", Arial;
+	font-size: 0.8rem;
+}
+
+label {
+	font-family: "Press Start 2P", Arial;
+	font-size: 0.9rem;
+}
+
+/* header */
+#header-img {
+	width: 9%;
+	height: 67px;
+	object-fit: cover;
+	padding: 5px;
+}
+
+#nav-bar {
+	margin-right: 5px;
+	height: 100%;
+}
+
+#nav-bar ul {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	height: 100%;
+}
+
+#nav-bar ul li {
+	list-style: none;
+	height: 100%;
+	padding: 1.5rem;
+}
+
+#nav-bar ul li:hover {
+	background-color: blue;
+}
+
+.nav-link {
+	text-decoration: none;
+	font-family: "Press Start 2P", Arial;
+	font-size: 0.8rem;
+	padding: 1.5rem;
+	transition: 0.3s;
+	background-color: transparent;
+}
+
+.nav-link:hover {
+	background-color: blue;
+}
+
+/* section video */
+.video div {
+
+}
+
+#video {
+	display: block;
+	margin: 5px auto;
+	height: 360px;
+}
+
+iframe {
+	width: 50%;
+}
+
+
+/* products */
+.products-container {
+	display: grid;
+  	grid-template-columns: repeat(3, 1fr);
+ 	grid-gap: 10px;
+  	grid-auto-rows: minmax(100px, auto);
+}
+
+.catalogue-name {
+	width: 31%;
+	margin: 0 auto;
+}
+
+.product img {
+	width: 80%;
+	transition: 0.3s;
+}
+
+.product img:hover {
+	width: 90%;
+	border: 10px solid blue; 
+}
+
+.price {
+	padding-bottom: 1.2rem;
+}
+
+.new {
+	color: red;
+	font-size: 0.9rem;
+}
+
+.old {
+	text-decoration: line-through;
+}
+
+/* from */
+.form {
+	margin-top: 10px;
+}
+
+.form-container {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+
+.form-name {
+	width: 27%;
+	margin: 0 auto;
+}
+
+form {
+	padding: 1.5rem;
+	display: grid;
+}
+
+form label {
+	padding: 1.2rem;
+}
+
+form input {
+	padding: 1.02rem;
+	font-family: "Press Start 2P", Arial;
+}
+
+form input:focus {
+	outline: none;
+	border-color: blue;
+}
+
+#submit {
+	margin-top: 10px;
+	color: blue;
+	border-color: blue;
+	transition: 0.3s;
+}
+
+#submit:hover {
+	color: white;
+	background-color: blue;
+}
+
+/* contact */
+.main-container {
+	width: 46%;
+	margin: 0 auto;
+}
+
+.contact h3 {
+	padding: 1.02rem 0;
+}
+
+.contact-container p {
+	padding: 0.5rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+	#video {
+		height: 150px;
+	}
+
+	h1 {
+		font-size: 1.3rem;
+		padding-left: 5px;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	main {
+		width: 90%;
+	}
+
+	#header-img  {
+		width: 0;
+		height: 0;
+		padding: 0;
+	}
+
+	#nav-bar ul li {
+		padding: 1rem;
+	}
+
+	.nav-link {
+		font-size: 0.5rem;
+		padding: 0.3rem;
+	}
+
+	.nav-link:hover {
+		background-color: transparent;
+	}
+
+	p {
+		font-size: 0.6rem;
+	}
+
+	.price, .new {
+		font-size: 0.6rem;
+	}
+
+	form {
+		padding: 0.5rem;
+		display: grid;
+	}
+
+	form label {
+		padding: 0.5rem;
+		font-size: 0.5rem;
+	}
+
+	form input {
+		padding: 0.8rem;
+		font-size: 0.6rem;
+	}
+
+	#submit {
+		font-size: 0.9rem;
+	}
+}
